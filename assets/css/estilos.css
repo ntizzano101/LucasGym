@@ -1,0 +1,65 @@
+/* ============================
+   ESTILOS GENERALES DEL SISTEMA
+   ============================ */
+
+body {
+    background-color: #f5f6fa;
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    color: #1e3c72;
+    font-weight: 600;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #1e3c72;
+    border-color: #1e3c72;
+}
+
+.btn-primary:hover {
+    background-color: #16315d;
+    border-color: #16315d;
+}
+
+/* Tablas */
+.table thead {
+    background-color: #1e3c72;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #eef2f7;
+}
+
+/* Formularios */
+.form-control {
+    border-radius: 6px;
+}
+
+/* Navbar */
+.navbar-dark {
+    background-color: #1e3c72 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Login card (por si querés usarlo en otras vistas) */
+.login-card {
+    width: 380px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffffffdd;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
