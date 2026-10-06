@@ -5,6 +5,7 @@
 	<meta http-equiv="Cache-Control" content="no-store" />
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= isset($title) ? $title : 'Sistema' ?></title>
 
     <!-- Bootstrap 5 -->

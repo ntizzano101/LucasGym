@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap.min.css') ?>">
     <script src="<?= base_url('assets/vendor/sweetalert.min.js') ?>"></script>
@@ -9,7 +11,7 @@
 <body class="bg-light">
 
 <div class="container mt-5">
-    <div class="col-md-4 offset-md-4">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto">
         <div class="card">
             <div class="card-header text-center">
                 <h4>Ingreso al Sistema</h4>

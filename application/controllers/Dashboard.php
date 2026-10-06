@@ -20,6 +20,7 @@ class Dashboard extends CI_Controller {
         $this->db->order_by('a.fecha', 'DESC');
         $data['presentes'] = $this->db->get()->result();
 
+
         // 2) Pagos últimos 10 días
         $this->db->select('DATE(fecha) AS dia, SUM(importe) AS total');
         $this->db->from('pagos');

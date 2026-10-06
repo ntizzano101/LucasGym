@@ -1,11 +1,12 @@
 <div class="container mt-4">
 
 
-    <div class="d-flex justify-content-between mb-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
         <h3>Actividades</h3>
         <a href="<?= base_url('actividades/nuevo') ?>" class="btn btn-primary">Nueva Actividad</a>
     </div>
 
+    <div class="table-responsive">
     <table class="table table-bordered table-striped">
         <thead class="table-dark">
             <tr>
@@ -25,14 +26,15 @@
                 <td><?= $a->habilitada ? 'Sí' : 'No' ?></td>
                 <td>$ <?= number_format($a->importe, 2) ?></td>
                 <td>
-                    <a href="<?= base_url('actividades/editar/'.$a->id) ?>" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="<?= base_url('actividades/editar/'.$a->id) ?>" class="btn btn-warning btn-sm mb-1">Editar</a>
 
-                    <button class="btn btn-danger btn-sm" onclick="eliminar(<?= $a->id ?>)">Eliminar</button>
+                    <button class="btn btn-danger btn-sm mb-1" onclick="eliminar(<?= $a->id ?>)">Eliminar</button>
                 </td>
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </div>
 
 <script>

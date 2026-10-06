@@ -63,3 +63,40 @@ h1, h2, h3, h4 {
     backdrop-filter: blur(5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
+/* ============================
+   AJUSTES PARA CELULAR
+   ============================ */
+
+/* Que las acciones de la tabla no se partan en dos renglones raros */
+.table td:last-child {
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    h3 {
+        font-size: 1.35rem;
+    }
+
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .table {
+        font-size: 0.875rem;
+    }
+
+    .table td, .table th {
+        padding: 0.4rem;
+    }
+
+    /* Evita que iOS haga zoom al tocar un campo */
+    .form-control, .form-select {
+        font-size: 16px;
+    }
+
+    .login-card {
+        width: 100%;
+    }
+}

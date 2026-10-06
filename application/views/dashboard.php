@@ -10,6 +10,7 @@
             <?php if (empty($presentes)): ?>
                 <p class="text-muted">No hay alumnos presentes en las últimas 2 horas.</p>
             <?php else: ?>
+                <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -26,6 +27,7 @@
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+                </div>
             <?php endif; ?>
 
         </div>
@@ -41,6 +43,7 @@
             <?php if (empty($pagos)): ?>
                 <p class="text-muted">No hay pagos registrados en los últimos 10 días.</p>
             <?php else: ?>
+                <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -57,6 +60,7 @@
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+                </div>
             <?php endif; ?>
 
         </div>
